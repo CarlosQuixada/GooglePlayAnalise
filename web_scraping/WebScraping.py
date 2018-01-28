@@ -25,4 +25,4 @@ dados = pd.DataFrame({
     "comentario":commentarios
 })
 
-dados.to_csv("clash_royale.csv",index=False)
+dados.to_csv("clash_royale2.csv",index=True)
