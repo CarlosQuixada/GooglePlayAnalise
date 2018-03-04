@@ -2,7 +2,6 @@ import nltk
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from . import Utils
-nltk.download('punkt')
 class PreProcesso (object):
     def __init__(self):
         self.acentos = Utils.ACENTOS
