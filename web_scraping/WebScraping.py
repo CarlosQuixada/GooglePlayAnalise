@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 import pandas as pd
 
-page = requests.get("https://play.google.com/store/apps/details?id=com.supercell.clashroyale")
+page = requests.get("https://play.google.com/store/apps/details?id=com.facebook.orca")
 soup = BeautifulSoup(page.content, 'html.parser')
 reviews = soup.select(".single-review")
 
@@ -25,4 +25,4 @@ dados = pd.DataFrame({
     "comentario":commentarios
 })
 
-dados.to_csv("clash_royale2.csv",index=True)
+dados.to_csv("messeger.csv",index=True)
